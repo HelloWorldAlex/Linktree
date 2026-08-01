@@ -3,7 +3,7 @@
 ## 📊 Project Information
 
 - **Project Name**: `linktree`
-- **Generated On**: 2026-08-01 23:23:31 (America/Bogota / GMT-05:00)
+- **Generated On**: 2026-08-01 23:26:06 (America/Bogota / GMT-05:00)
 - **Total Files Processed**: 14
 - **Export Tool**: Easy Whole Project to Single Text File for LLMs v1.1.0
 - **Tool Author**: Jota / José Guilherme Pandolfi
@@ -25,14 +25,14 @@
 ├── 📄 domain.png (17.13 KB)
 ├── 📄 facebook.png (10.83 KB)
 ├── 📄 github.png (14.54 KB)
-├── 📄 index.html (15.01 KB)
+├── 📄 index.html (14.43 KB)
 ├── 📄 instagram.png (17.56 KB)
 ├── 📄 link.png (8.79 KB)
 ├── 📄 linkedin.png (12.15 KB)
 ├── 📄 paypal.png (16.2 KB)
 ├── 📄 profile.png (386.23 KB)
 ├── 📄 snapchat.png (13.97 KB)
-├── 📄 style.css (6.22 KB)
+├── 📄 style.css (5.84 KB)
 └── 📄 youtube.png (11.88 KB)
 ```
 
@@ -53,7 +53,7 @@
 | Total Directories | 0 |
 | Text Files | 2 |
 | Binary Files | 12 |
-| Total Size | 560.88 KB |
+| Total Size | 559.91 KB |
 
 ### 📄 File Types Distribution
 
@@ -68,15 +68,15 @@
 ### <a id="📄-index-html"></a>📄 `index.html`
 
 **File Info:**
-- **Size**: 15.01 KB
+- **Size**: 14.43 KB
 - **Extension**: `.html`
 - **Language**: `html`
 - **Location**: `index.html`
 - **Relative Path**: `root`
 - **Created**: 2026-08-01 21:53:51 (America/Bogota / GMT-05:00)
-- **Modified**: 2026-08-01 23:23:23 (America/Bogota / GMT-05:00)
-- **MD5**: `f87f49ccaa25215614aeb6cb894fcb83`
-- **SHA256**: `6b4af2a53846f1e4accc663eb233875da14642110640a1fcd91f617e8a758dc9`
+- **Modified**: 2026-08-01 23:25:56 (America/Bogota / GMT-05:00)
+- **MD5**: `487fb68a207d01fbfb5cbe49d5c5f85f`
+- **SHA256**: `f031387a7401ecfbac18f8eac911c4388004839ff140d14a55b754d22d8b26bc`
 - **Encoding**: UTF-8
 
 **File code content:**
@@ -246,24 +246,12 @@
     </a>
   </div>
 
-  <div class="footer-links">
-    <a href="https://linktr.ee" target="_blank" rel="noopener">Cookie Preferences</a>
-    <span>•</span>
-    <a href="https://linktr.ee" target="_blank" rel="noopener">Report</a>
-    <span>•</span>
-    <a href="https://linktr.ee" target="_blank" rel="noopener">Privacy</a>
-    <span>•</span>
-    <a href="https://linktr.ee" target="_blank" rel="noopener">Explore</a>
-    <span>•</span>
-    <a href="https://linktr.ee" target="_blank" rel="noopener">About this account</a>
-    <span>•</span>
-    <a href="https://linktr.ee" target="_blank" rel="noopener">More from Linktree</a>
+  <div class="card-footer-copy">
+    Copyright &copy; AlexOneCod 2026
   </div>
 
 </div>
 </div>
-
-<footer>Copyright &copy; AlexOneCod 2026</footer>
 
 <script>
   const avatar = document.getElementById('avatar');
@@ -294,15 +282,15 @@
 ### <a id="📄-style-css"></a>📄 `style.css`
 
 **File Info:**
-- **Size**: 6.22 KB
+- **Size**: 5.84 KB
 - **Extension**: `.css`
 - **Language**: `css`
 - **Location**: `style.css`
 - **Relative Path**: `root`
 - **Created**: 2026-08-01 22:04:13 (America/Bogota / GMT-05:00)
-- **Modified**: 2026-08-01 23:23:31 (America/Bogota / GMT-05:00)
-- **MD5**: `d956f63e0f169dad7aceb650431dc2fb`
-- **SHA256**: `c30bb9d957e6a26719b5ef13d513a9b7fd71e16991ace3628ed7191d22488af3`
+- **Modified**: 2026-08-01 23:26:05 (America/Bogota / GMT-05:00)
+- **MD5**: `c4454cee5403fb1648cbbe331b342771`
+- **SHA256**: `1ea105fae72ae04343612f0c11949dda69c5a0930be558b60ac4f16be093fa4f`
 - **Encoding**: ASCII
 
 **File code content:**
@@ -454,36 +442,15 @@ body{
 .arrow svg{ width: 16px; height: 16px; }
 .link-row:hover .arrow{ color: #111; transform: scale(1.1); }
 
-.footer-links{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  gap: 8px;
+.card-footer-copy{
+  text-align: center;
+  font-size: 11.5px;
+  color: #777;
+  font-weight: 500;
   margin-top: 32px;
   padding-top: 20px;
   border-top: 1px solid #EEEEEE;
-  font-size: 11.5px;
 }
-
-.footer-links a{
-  color: #777;
-  text-decoration: none;
-  font-weight: 500;
-  transition: color 0.2s;
-}
-
-.footer-links a:hover{
-  color: #111;
-  text-decoration: underline;
-}
-
-.footer-links span{
-  color: #CCC;
-  font-size: 10px;
-}
-
-footer{ text-align:center; font-size: 11px; color: #666; position: relative; z-index: 1; margin-top: 6px; font-weight: 500; }
 
 @media (prefers-reduced-motion: reduce){
   .link-row, .socials a, .arrow, .bg-blob, .avatar, .name{ animation:none; transition:none; }

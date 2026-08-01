@@ -144,36 +144,15 @@ body{
 .arrow svg{ width: 16px; height: 16px; }
 .link-row:hover .arrow{ color: #111; transform: scale(1.1); }
 
-.footer-links{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  gap: 8px;
+.card-footer-copy{
+  text-align: center;
+  font-size: 11.5px;
+  color: #777;
+  font-weight: 500;
   margin-top: 32px;
   padding-top: 20px;
   border-top: 1px solid #EEEEEE;
-  font-size: 11.5px;
 }
-
-.footer-links a{
-  color: #777;
-  text-decoration: none;
-  font-weight: 500;
-  transition: color 0.2s;
-}
-
-.footer-links a:hover{
-  color: #111;
-  text-decoration: underline;
-}
-
-.footer-links span{
-  color: #CCC;
-  font-size: 10px;
-}
-
-footer{ text-align:center; font-size: 11px; color: #666; position: relative; z-index: 1; margin-top: 6px; font-weight: 500; }
 
 @media (prefers-reduced-motion: reduce){
   .link-row, .socials a, .arrow, .bg-blob, .avatar, .name{ animation:none; transition:none; }
