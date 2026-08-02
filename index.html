@@ -64,7 +64,7 @@
   </div>
 
   <div class="section-label">Sobre mí</div>
-  <p class="about-text">¡Hola! Soy Sindy Alejandra 🇨🇴 — ingeniera de sistemas colombiana, apasionada por la tecnología, el contenido digital y el crecimiento personal. Aquí encuentras todo mi mundo: mis redes, mis proyectos y mi historia académica, reunidos en un solo lugar.</p>
+  <p class="about-text">¡Hola! Soy Sindy Alejandra 🇨🇴 Ingeniera de sistemas colombiana, apasionada por la tecnología, el contenido digital y el crecimiento personal. Aquí encuentras todo mi mundo: mis redes, mis proyectos y mi historia académica, reunidos en un solo lugar.</p>
 
   <div class="section-label">Apoya mi trabajo</div>
   <div class="links">
@@ -162,6 +162,12 @@
     </a>
   </div>
 
+  <!-- Contador de Visitas -->
+  <div class="visitor-counter">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+    <span>Visitas: <strong id="visit-count">...</strong></span>
+  </div>
+
   <div class="card-footer-copy">
     Copyright &copy; AlexOneCod 2026
   </div>
@@ -169,25 +175,8 @@
 </div>
 </div>
 
-<script>
-  const avatar = document.getElementById('avatar');
-  const layer = document.getElementById('sparkleLayer');
-  avatar.addEventListener('mouseenter', () => {
-    for (let i = 0; i < 18; i++) {
-      const s = document.createElement('span');
-      s.className = 'sparkle';
-      const angle = Math.random() * Math.PI * 2;
-      const dist = 40 + Math.random() * 50;
-      s.style.setProperty('--tx', Math.cos(angle) * dist + 'px');
-      s.style.setProperty('--ty', Math.sin(angle) * dist + 'px');
-      s.style.left = '50%';
-      s.style.top = '50%';
-      s.style.animationDelay = (Math.random() * 0.15) + 's';
-      layer.appendChild(s);
-      setTimeout(() => s.remove(), 900);
-    }
-  });
-</script>
+<!-- Llamado al archivo script.js externo -->
+<script src="script.js"></script>
 
 </body>
 </html>
