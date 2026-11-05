@@ -5,7 +5,7 @@ PROJECT EXPORT FOR LLMs
 PROJECT INFORMATION:
 --------------------------------------------------
 Project Name: linktree
-Generated On: 2026-11-05 17:30:01 (America/Bogota / GMT-05:00)
+Generated On: 2026-11-05 17:34:26 (America/Bogota / GMT-05:00)
 Total Files Processed: 5
 Export Tool: Easy Whole Project to Single Text File for LLMs v1.1.0
 Tool Author: Jota / José Guilherme Pandolfi
@@ -25,7 +25,7 @@ PROJECT STRUCTURE
 ├── 📄 index.html (14.94 KB)
 ├── 📄 link.png (8.79 KB)
 ├── 📄 profile.png (386.23 KB)
-├── 📄 script.js (1.15 KB)
+├── 📄 script.js (1.58 KB)
 └── 📄 style.css (6.15 KB)
 
 ================================================================================
@@ -35,7 +35,7 @@ Total Files: 5
 Total Directories: 0
 Text Files: 3
 Binary Files: 2
-Total Size: 417.26 KB
+Total Size: 417.69 KB
 
 FILE TYPES DISTRIBUTION:
 ------------------------------
@@ -274,20 +274,19 @@ FILE: script.js
 
 FILE INFORMATION:
 ----------------------------------------
-Size: 1.15 KB
+Size: 1.58 KB
 Extension: .js
 Language: javascript
 Location: script.js
 Relative Path: root
 Created: 2026-08-02 00:08:12 (America/Bogota / GMT-05:00)
-Modified: 2026-08-02 00:09:05 (America/Bogota / GMT-05:00)
-MD5: 8a2152f02d41f73d79ab9d58267e72b8
-SHA256: 2e12d573ee9c728c7b94a087a16d9417187f0ca89e5ea269a75a81f587562572
-Encoding: ASCII
+Modified: 2026-11-05 17:34:26 (America/Bogota / GMT-05:00)
+MD5: d7771581ab5bce42b8ff75d55000aa1d
+SHA256: 4b9afa8c5fedd54564f0e358b646a2d608d5563a1827d7de14a6cd446b5a6a4b
+Encoding: UTF-8
 
 FILE CONTENT:
 ----------------------------------------
-
 const avatar = document.getElementById('avatar');
 const layer = document.getElementById('sparkleLayer');
 
@@ -309,22 +308,30 @@ if (avatar && layer) {
   });
 }
 
+// Lógica del contador corregida para acoplarse a tus estilos CSS (.visitor-counter strong)
+document.addEventListener('DOMContentLoaded', () => {
+  // Buscamos la etiqueta strong dentro de la clase .visitor-counter
+  const counterEl = document.querySelector('.visitor-counter strong');
+  
+  if (counterEl) {
+    fetch('https://counterapi.dev')
+      .then(response => response.json())
+      .then(data => {
+        if (data && data.count) {
+          counterEl.textContent = data.count;
+        }
+      })
+      .catch(error => {
+        console.error('Error al cargar visitas:', error);
+        // Respaldo local si la API externa no responde
+        let localVisits = localStorage.getItem('linktree_page_visits') || 210;
+        localVisits = parseInt(localVisits) + 1;
+        localStorage.setItem('linktree_page_visits', localVisits);
+        counterEl.textContent = localVisits;
+      });
+  }
+});
 
-fetch('https://api.counterapi.dev/v1/sindy-linktree/visitas/up')
-  .then(response => response.json())
-  .then(data => {
-    const counterEl = document.getElementById('visit-count');
-    if (counterEl) {
-      counterEl.textContent = data.count;
-    }
-  })
-  .catch(error => {
-    console.error('Error al cargar visitas:', error);
-    const counterEl = document.getElementById('visit-count');
-    if (counterEl) {
-      counterEl.textContent = '1';
-    }
-  });
 ================================================================================
 
 

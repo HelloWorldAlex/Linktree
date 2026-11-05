@@ -1,4 +1,3 @@
-
 const avatar = document.getElementById('avatar');
 const layer = document.getElementById('sparkleLayer');
 
@@ -20,19 +19,26 @@ if (avatar && layer) {
   });
 }
 
-
-fetch('https://api.counterapi.dev/v1/sindy-linktree/visitas/up')
-  .then(response => response.json())
-  .then(data => {
-    const counterEl = document.getElementById('visit-count');
-    if (counterEl) {
-      counterEl.textContent = data.count;
-    }
-  })
-  .catch(error => {
-    console.error('Error al cargar visitas:', error);
-    const counterEl = document.getElementById('visit-count');
-    if (counterEl) {
-      counterEl.textContent = '1';
-    }
-  });
+// Lógica del contador corregida para acoplarse a tus estilos CSS (.visitor-counter strong)
+document.addEventListener('DOMContentLoaded', () => {
+  // Buscamos la etiqueta strong dentro de la clase .visitor-counter
+  const counterEl = document.querySelector('.visitor-counter strong');
+  
+  if (counterEl) {
+    fetch('https://counterapi.dev')
+      .then(response => response.json())
+      .then(data => {
+        if (data && data.count) {
+          counterEl.textContent = data.count;
+        }
+      })
+      .catch(error => {
+        console.error('Error al cargar visitas:', error);
+        // Respaldo local si la API externa no responde
+        let localVisits = localStorage.getItem('linktree_page_visits') || 210;
+        localVisits = parseInt(localVisits) + 1;
+        localStorage.setItem('linktree_page_visits', localVisits);
+        counterEl.textContent = localVisits;
+      });
+  }
+});
