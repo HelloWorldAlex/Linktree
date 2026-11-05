@@ -5,7 +5,7 @@ PROJECT EXPORT FOR LLMs
 PROJECT INFORMATION:
 --------------------------------------------------
 Project Name: linktree
-Generated On: 2026-08-02 00:13:02 (America/Bogota / GMT-05:00)
+Generated On: 2026-11-05 17:30:01 (America/Bogota / GMT-05:00)
 Total Files Processed: 5
 Export Tool: Easy Whole Project to Single Text File for LLMs v1.1.0
 Tool Author: Jota / José Guilherme Pandolfi
@@ -22,7 +22,7 @@ Custom File Name Pattern: {workspaceName}-output
 ================================================================================
 PROJECT STRUCTURE
 ================================================================================
-├── 📄 index.html (14.11 KB)
+├── 📄 index.html (14.94 KB)
 ├── 📄 link.png (8.79 KB)
 ├── 📄 profile.png (386.23 KB)
 ├── 📄 script.js (1.15 KB)
@@ -35,7 +35,7 @@ Total Files: 5
 Total Directories: 0
 Text Files: 3
 Binary Files: 2
-Total Size: 416.43 KB
+Total Size: 417.26 KB
 
 FILE TYPES DISTRIBUTION:
 ------------------------------
@@ -55,15 +55,15 @@ FILE: index.html
 
 FILE INFORMATION:
 ----------------------------------------
-Size: 14.11 KB
+Size: 14.94 KB
 Extension: .html
 Language: html
 Location: index.html
 Relative Path: root
 Created: 2026-08-01 21:53:51 (America/Bogota / GMT-05:00)
-Modified: 2026-08-02 00:13:01 (America/Bogota / GMT-05:00)
-MD5: 597a64da3470897801ed9b048af88daf
-SHA256: e67717b06e47965850048784c589aec950e6f4e0d3c8f5e47377b616b7a042d6
+Modified: 2026-11-05 17:30:01 (America/Bogota / GMT-05:00)
+MD5: 8336323f4180d3ba9c5ea7bd02b71395
+SHA256: 74e48d1eefd5a59a7d09f5c6cd50079c8aa7244dd7113c10dc5aa7a7daa15ecd
 Encoding: UTF-8
 
 FILE CONTENT:
@@ -145,6 +145,21 @@ FILE CONTENT:
         <svg viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="5" r="1.5"/><circle cx="12" cy="12" r="1.5"/><circle cx="12" cy="19" r="1.5"/></svg>
       </span>
     </a>
+
+     <!-- Nueva Fila de Amazon Wishlist acoplada perfectamente a tu estilo -->
+    <a class="link-row" href="https://www.amazon.com/hz/wishlist/ls/2DIW83RMNJ5CT?ref_=wl_share" target="_blank" rel="noopener">
+      <span class="icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4zM3 6h18M16 10a4 4 0 0 1-8 0"/>
+        </svg>
+      </span>
+      <span class="link-text"><span class="label">Lista de Regalos</span><span class="value">Amazon envio de regalos a Sindy</span></span>
+      <span class="arrow">
+        <svg viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="5" r="1.5"/><circle cx="12" cy="12" r="1.5"/><circle cx="12" cy="19" r="1.5"/></svg>
+      </span>
+    </a>
+  
+
   </div>
 
   <div class="section-label">Redes sociales</div>
